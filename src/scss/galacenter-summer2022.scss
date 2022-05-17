@@ -26,6 +26,7 @@ body{
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	margin: 0;
+	text-shadow: 5px 5px #000;
 }
 
 .h2{
@@ -35,6 +36,19 @@ body{
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	margin: 0;
+	text-shadow: 5px 5px #000;
+}
+@include r(767){
+	.h1{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+	}
+	.h2{
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+	}
 }
 
 .img-fluid{

@@ -48,6 +48,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;
+  text-shadow: 5px 5px #000;
 }
 
 .h2 {
@@ -57,6 +58,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;
+  text-shadow: 5px 5px #000;
 }
 
 .img-fluid {
@@ -157,6 +159,20 @@ body {
   font-weight: 900;
 }
 
+.populary-summer2022 {
+  padding: 73px 0;
+}
+
+.populary-summer2022__body {
+  overflow: hidden;
+}
+
+.populary-summer2022 .h2 {
+  color: #6FDCE7;
+  margin-bottom: 93px;
+  text-align: center;
+}
+
 .brand-summer2022 {
   background-color: #EBB6BC;
   padding: 72px 0 109px;
@@ -209,6 +225,18 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  .h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
   .spec-summer2022__body:after {
     display: none;
   }

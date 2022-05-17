@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
   font-weight: 400;
 }
 
@@ -62,6 +62,99 @@ body {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.spec-summer2022 {
+  background-color: #6FDCE7;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  padding: 78px 0;
+  position: relative;
+}
+
+.spec-summer2022:before {
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: 0;
+  background-image: url("../img/decor-dots-circle.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 114px;
+  height: 305px;
+}
+
+.spec-summer2022__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.spec-summer2022__body:after {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -30px;
+  background-image: url("../img/decor-dots.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 361px;
+  height: 258px;
+}
+
+.spec-summer2022__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 308px;
+          flex: 1 0 308px;
+  max-width: 308px;
+  color: #FFFFFF;
+  background-color: #B6DAAD;
+  height: 259px;
+  padding: 25px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.spec-summer2022__item:nth-child(2n) {
+  background-color: #fff;
+  color: #EBB6BC;
+}
+
+.spec-summer2022__item:nth-child(3n) {
+  background-color: #EBB6BC;
+}
+
+.spec-summer2022__icon {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.spec-summer2022__icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+.spec-summer2022__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+
+.spec-summer2022__name b {
+  font-weight: 900;
 }
 
 .brand-summer2022 {
@@ -113,4 +206,10 @@ body {
 
 .brand-summer2022 .swiper-slide img {
   display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .spec-summer2022__body:after {
+    display: none;
+  }
 }

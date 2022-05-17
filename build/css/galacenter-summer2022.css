@@ -1,0 +1,116 @@
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+  Maintain ratio mixin.
+  @param {List} [$ratio] Ratio the element needs to maintain. A 16:9 ratio would look like this:
+  .element { @include maintain-ratio(16 9); }
+*/
+
+@font-face {
+  font-family: "Null";
+  src: url("../fonts/Null/Null-Normal.eot") format("eot");
+  src: url("../fonts/Null/Null-Normal.woff") format("woff"), url("../fonts/Null/Null-Normal.woff2") format("woff2"), url("../fonts/Null/Null-Normal.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.main {
+  margin-top: -40px;
+  position: relative;
+}
+
+.main.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.breadcrumb {
+  display: none;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.h1 {
+  font-family: "Null";
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.h2 {
+  font-family: "Null";
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-summer2022 {
+  background-color: #EBB6BC;
+  padding: 72px 0 109px;
+  overflow: hidden;
+}
+
+.brand-summer2022__body {
+  position: relative;
+}
+
+.brand-summer2022__body:after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  right: -150px;
+  background-image: url("../img/decor-dots.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 361px;
+  height: 258px;
+}
+
+.brand-summer2022 .h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.brand-summer2022 .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-summer2022 .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.brand-summer2022 .swiper-slide img {
+  display: block;
+}

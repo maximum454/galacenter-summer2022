@@ -1,0 +1,51 @@
+@import "./mixin";
+@import "./fonts";
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.main{
+	margin-top: -40px;
+	position: relative;
+}
+.main.container{
+	max-width: 100%;
+	padding: 0;
+}
+.breadcrumb{
+	display: none;
+}
+.footer{
+	margin-top: 0;
+}
+.h1{
+	font-family: $font1;
+	font-size: 64px;
+	line-height: 77px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.h2{
+	font-family: $font1;
+	font-size: 36px;
+	line-height: 43px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+
+@import "componets/slider-summer2022";
+@import "componets/spec-summer2022";
+@import "componets/populary-summer2022";
+@import "componets/assort-summer2022";
+@import "componets/brand-summer2022";
+
+

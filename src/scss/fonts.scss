@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Null';
+	src: url('../fonts/Null/Null-Normal.eot') format('eot');
+	src: url('../fonts/Null/Null-Normal.woff') format('woff'),
+	url('../fonts/Null/Null-Normal.woff2') format('woff2'),
+	url('../fonts/Null/Null-Normal.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+$font1: 'Null';

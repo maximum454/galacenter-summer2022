@@ -1,0 +1,36 @@
+.brand-summer2022{
+  background-color: #EBB6BC;
+  padding: 72px 0 109px;
+  overflow: hidden;
+  &__body{
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -200px;
+      right: -150px;
+      background-image: url("../img/decor-dots.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 361px;
+      height: 258px;
+    }
+  }
+  .h2{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+  .swiper-wrapper{
+    align-items: center;
+  }
+  .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    img{
+      display: block;
+    }
+  }
+}

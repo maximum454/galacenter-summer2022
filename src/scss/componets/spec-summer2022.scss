@@ -4,17 +4,7 @@
   font-family: 'Montserrat', sans-serif;
   padding: 78px 0;
   position: relative;
-  &:before{
-    content: '';
-    position: absolute;
-    top: -160px;
-    left: 0;
-    background-image: url("../img/decor-dots-circle.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 114px;
-    height: 305px;
-  }
+
   &__body{
     display: flex;
     flex-wrap: wrap;

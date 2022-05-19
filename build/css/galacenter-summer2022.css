@@ -67,12 +67,71 @@ body {
   height: auto;
 }
 
+.slider-summer2022 {
+  position: relative;
+  background-color: #EBB6BC;
+}
+
+.slider-summer2022__decor {
+  position: absolute;
+  bottom: -160px;
+  left: 0;
+  background-image: url("../img/decor-dots-circle.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 114px;
+  height: 305px;
+  z-index: 10;
+  pointer-events: none;
+}
+
 .slider-summer2022__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+}
+
+.slider-summer2022__item--variant1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #EBB6BC;
+  width: 100%;
+  height: calc(100% - 18px);
+  pointer-events: none;
+  border-bottom: 18px solid #fff;
+}
+
+.slider-summer2022__item--variant1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: #6FDCE7;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.slider-summer2022__item--variant1 .slider-summer2022__img {
+  background-color: #EBB6BC;
+}
+
+.slider-summer2022__item--variant1 .slider-summer2022__content {
+  background-color: #6FDCE7;
+}
+
+.slider-summer2022__item--variant2 .slider-summer2022__img {
+  background-color: #6FDCE7;
+}
+
+.slider-summer2022__item--variant2 .slider-summer2022__content {
+  background-color: #B6DAAD;
 }
 
 .slider-summer2022__img {
@@ -90,6 +149,19 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px;
+  border-right: 18px solid #fff;
+  border-bottom: 18px solid #fff;
+  position: relative;
+}
+
+.slider-summer2022__img--decor {
+  position: absolute;
+  top: 0;
+  left: 324px;
+  background-image: url("../img/slider-decor.png");
+  background-repeat: no-repeat;
+  width: 1157px;
+  height: 498px;
 }
 
 .slider-summer2022__img img {
@@ -97,6 +169,8 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .slider-summer2022__content {
@@ -151,24 +225,36 @@ body {
   opacity: 0.9;
 }
 
+.slider-summer2022 .swiper-slide {
+  height: auto;
+}
+
+.slider-summer2022 .swiper-pagination {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}
+
+.slider-summer2022 .swiper-pagination-bullet {
+  background-color: #000000;
+  border: 1px solid #fff;
+  width: 16px;
+  height: 16px;
+  margin: 0 22px;
+  opacity: 1;
+}
+
+.slider-summer2022 .swiper-pagination-bullet-active {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
 .spec-summer2022 {
   background-color: #6FDCE7;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   padding: 78px 0;
   position: relative;
-}
-
-.spec-summer2022:before {
-  content: "";
-  position: absolute;
-  top: -160px;
-  left: 0;
-  background-image: url("../img/decor-dots-circle.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 114px;
-  height: 305px;
 }
 
 .spec-summer2022__body {

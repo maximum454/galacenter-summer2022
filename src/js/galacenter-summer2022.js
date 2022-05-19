@@ -1,3 +1,19 @@
+const swiperMainSummer2022 = new Swiper('.swiper-main-summer2022', {
+    slidesPerView: 1,
+    loop:false,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+    autoplay: {
+        delay: 5000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+});
+
 const swiperPopularySummer2022 = new Swiper('.swiper-populary-summer2022', {
     slidesPerView: 5,
     spaceBetween:50,

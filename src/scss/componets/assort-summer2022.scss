@@ -138,6 +138,9 @@
     text-align: center;
     flex: 1 0 272px;
     padding: 38px;
+    &:hover{
+      opacity: .9;
+    }
     &--color1{
       background-color: #EBB6BC;
     }

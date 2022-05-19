@@ -1,3 +1,57 @@
 .slider-summer2022{
+  &__item{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__img{
+    flex: 1 0 60%;
+    background-color: #B6DAAD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    img{
+      display: block;
+      object-fit: contain;
+      height: auto;
+    }
+  }
+  &__content{
+    flex: 1 0 40%;
+    background-color: #EBB6BC;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name{
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 89px;
+    color: #FFFFFF;
+    text-shadow: 5px 5px #000;
 
+  }
+  &__btn{
+    width: fit-content;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #000000;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 28px 34px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    &:hover{
+      opacity: .9;
+    }
+  }
 }

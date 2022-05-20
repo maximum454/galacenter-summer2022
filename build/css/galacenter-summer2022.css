@@ -155,10 +155,19 @@ body {
 }
 
 .slider-summer2022__img--decor {
+  width: 507px;
+}
+
+.slider-summer2022__img--decor:before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 324px;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-10%, 0);
+      -ms-transform: translate(-10%, 0);
+          transform: translate(-10%, 0);
   background-image: url("../img/slider-decor.png");
+  background-position: top right;
   background-repeat: no-repeat;
   width: 1157px;
   height: 498px;

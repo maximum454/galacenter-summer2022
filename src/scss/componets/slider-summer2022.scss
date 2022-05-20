@@ -109,6 +109,7 @@
     text-decoration: none;
     display: block;
     text-align: center;
+    z-index: 10;
     &:hover{
       opacity: .9;
     }
@@ -130,6 +131,8 @@
     position: absolute;
     bottom: 20%;
     right: 20%;
+    left: auto;
+    width: auto;
     &-bullet{
       background-color: #000000;
       border: 1px solid #fff;

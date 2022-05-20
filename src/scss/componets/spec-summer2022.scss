@@ -68,9 +68,13 @@
   }
   @include r(767){
     &__body{
+      display: block;
       &:after{
        display: none;
       }
+    }
+    &__item{
+      margin: 0 auto 20px;
     }
   }
 }

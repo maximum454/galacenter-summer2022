@@ -149,4 +149,51 @@
       }
     }
   }
+  @include r(1023){
+    &__img{
+      flex: 1 0 100%;
+      height: 338px;
+      padding: 40px;
+      border-right: none;
+      border-bottom: 13px solid #fff;
+      &--decor{
+        width: 507px;
+        &:before{
+
+          background-image: url("../img/slider-decor.png");
+          background-size: 100%;
+          width: 592px;
+          height: 162px;
+        }
+
+      }
+      img{
+        height: 100%;
+      }
+    }
+    &__content{
+      flex: 1 0 100%;
+      padding: 40px 20px 74px;
+      text-align: center;
+    }
+    &__name{
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 20px;
+
+    }
+    &__btn{
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 18px 30px;
+    }
+    .swiper-pagination{
+      position: absolute;
+      bottom: 35px;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+  }
 }

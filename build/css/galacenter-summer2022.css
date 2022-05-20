@@ -95,29 +95,6 @@ body {
   position: relative;
 }
 
-.slider-summer2022__item--variant1:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  background-color: #EBB6BC;
-  width: 100%;
-  height: calc(100% - 18px);
-  pointer-events: none;
-  border-bottom: 18px solid #fff;
-}
-
-.slider-summer2022__item--variant1:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -100%;
-  background-color: #6FDCE7;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
 .slider-summer2022__item--variant1 .slider-summer2022__img {
   background-color: #EBB6BC;
 }
@@ -198,6 +175,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 250px;
 }
 
 .slider-summer2022__name {
@@ -543,9 +521,13 @@ body {
   background-color: #fff;
 }
 
+.assort-summer2022__img {
+  margin: 0 auto 33px;
+}
+
 .assort-summer2022__img img {
   display: block;
-  margin: 0 auto 33px;
+  margin: 0 auto;
 }
 
 .assort-summer2022__name {
@@ -830,6 +812,14 @@ body {
     height: 100%;
   }
 
+  .assort-summer2022__body--variant3 .assort-summer2022__name {
+    color: #fff;
+  }
+
+  .assort-summer2022__body--variant3 .assort-summer2022__item--color2 .assort-summer2022__name {
+    color: #EBB6BC;
+  }
+
   .assort-summer2022__body--variant4 {
     background-color: #B6DAAD;
     position: relative;
@@ -858,6 +848,20 @@ body {
     background-color: #B6DAAD;
     width: 100%;
     height: 100%;
+  }
+
+  .assort-summer2022__body--variant4 .assort-summer2022__name {
+    color: #fff;
+  }
+
+  .assort-summer2022__body--variant4 .assort-summer2022__item--color2 .assort-summer2022__name {
+    color: #B6DAAD;
+  }
+
+  .assort-summer2022__body--variant4 .decor {
+    background-size: 100%;
+    width: 100px;
+    left: 0;
   }
 
   .assort-summer2022__body--variant5 {
@@ -890,5 +894,9 @@ body {
 
   .assort-summer2022__item {
     position: relative;
+  }
+
+  .assort-summer2022__img {
+    margin-bottom: 10px;
   }
 }

@@ -19,27 +19,6 @@
     height: 100%;
     position: relative;
     &--variant1{
-      &:before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        background-color: #EBB6BC;
-        width: 100%;
-        height: calc(100% - 18px);
-        pointer-events: none;
-        border-bottom: 18px solid #fff;
-      }
-      &:after{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -100%;
-        background-color: #6FDCE7;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-      }
       .slider-summer2022__img{
           background-color: #EBB6BC;
       }
@@ -98,6 +77,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 250px;
   }
   &__name{
     font-family: $font1;

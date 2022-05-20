@@ -14,13 +14,14 @@
     &:after{
       content: '';
       position: absolute;
-      top: -120px;
+      top: -115px;
       right: -30px;
       background-image: url("../img/decor-dots.png");
       background-repeat: no-repeat;
       background-size: 100%;
       width: 361px;
       height: 258px;
+      pointer-events: none;
     }
   }
   &__item{
@@ -30,11 +31,12 @@
     background-color: #B6DAAD;
     height: 259px;
     padding: 25px;
-    display: block;
     text-decoration: none;
     text-align: center;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
     &:hover{
       opacity: .9;
       box-shadow: 0 0 50px 5px rgba(0,0,0,0.3);
@@ -50,6 +52,7 @@
   &__icon{
     text-align: center;
     margin-bottom: 30px;
+    height: 130px;
     img{
       display: block;
       margin: 0 auto;
@@ -62,6 +65,7 @@
     line-height: 24px;
     letter-spacing: 0.05em;
     text-transform: lowercase;
+    margin: auto;
     b{
       font-weight: 900;
     }

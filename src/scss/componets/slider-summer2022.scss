@@ -25,6 +25,10 @@
       .slider-summer2022__content{
           background-color: #6FDCE7;
       }
+      .slider-summer2022__name{
+        font-size: 64px;
+        line-height: 77px;
+      }
     }
     &--variant2{
       .slider-summer2022__img{
@@ -140,6 +144,15 @@
     }
   }
   @include r(1023){
+    &__item{
+
+      &--variant1{
+        .slider-summer2022__name{
+          font-size: 40px;
+          line-height: 57px;
+        }
+      }
+    }
     &__img{
       flex: 1 0 100%;
       height: 338px;

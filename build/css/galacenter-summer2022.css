@@ -638,6 +638,17 @@ body {
 
 .brand-summer2022__body {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .brand-summer2022__body:after {
@@ -652,33 +663,15 @@ body {
   height: 258px;
 }
 
+.brand-summer2022__item {
+  -ms-flex-wrap: 1 0;
+      flex-wrap: 1 0;
+}
+
 .brand-summer2022 .h2 {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 31px;
-}
-
-.brand-summer2022 .swiper-wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.brand-summer2022 .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-}
-
-.brand-summer2022 .swiper-slide img {
-  display: block;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -937,5 +930,11 @@ body {
 
   .assort-summer2022__img {
     margin-bottom: 10px;
+  }
+
+  .brand-summer2022__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

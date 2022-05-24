@@ -4,6 +4,10 @@
   overflow: hidden;
   &__body{
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     &:after{
       content: '';
       position: absolute;
@@ -16,21 +20,17 @@
       height: 258px;
     }
   }
+  &__item{
+    flex-wrap: 1 0;
+  }
   .h2{
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 31px;
   }
-  .swiper-wrapper{
-    align-items: center;
-  }
-  .swiper-slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    img{
-      display: block;
+  @include r(767){
+    &__body {
+      justify-content: center;
     }
   }
 }

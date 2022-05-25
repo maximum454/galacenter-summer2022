@@ -443,6 +443,10 @@ body {
   height: 100%;
 }
 
+.assort-summer2022__body--variant2 .decor {
+  display: none;
+}
+
 .assort-summer2022__body--variant3 {
   background-color: #6FDCE7;
   position: relative;
@@ -472,6 +476,10 @@ body {
 
 .assort-summer2022__body--variant3 .assort-summer2022__item--color2 .assort-summer2022__name {
   color: #EBB6BC;
+}
+
+.assort-summer2022__body--variant3 .decor {
+  display: none;
 }
 
 .assort-summer2022__body--variant4 {
@@ -536,6 +544,10 @@ body {
   height: 100%;
 }
 
+.assort-summer2022__body--variant5 .decor {
+  display: none;
+}
+
 .assort-summer2022__item {
   display: block;
   text-decoration: none;
@@ -569,6 +581,7 @@ body {
 }
 
 .assort-summer2022__name {
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -661,11 +674,6 @@ body {
   background-size: 100%;
   width: 361px;
   height: 258px;
-}
-
-.brand-summer2022__item {
-  -ms-flex-wrap: 1 0;
-      flex-wrap: 1 0;
 }
 
 .brand-summer2022 .h2 {
@@ -762,6 +770,21 @@ body {
     margin: 0 auto 20px;
   }
 
+  .assort-summer2022 {
+    padding: 50px 0;
+  }
+
+  .assort-summer2022:before {
+    content: "";
+    position: absolute;
+    top: 270px;
+    left: -36px;
+    background-image: url("../img/decor-dots-2.png");
+    background-size: 100%;
+    width: 114px;
+    height: 290px;
+  }
+
   .assort-summer2022__body {
     display: block;
   }
@@ -810,6 +833,22 @@ body {
     height: 100%;
   }
 
+  .assort-summer2022__body--variant2 .decor {
+    position: absolute;
+    top: auto;
+    left: auto;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    bottom: -120px;
+    right: -73px;
+    background-image: url(../img/decor-dots-2.png);
+    background-size: 100%;
+    width: 114px;
+    height: 290px;
+    display: block;
+  }
+
   .assort-summer2022__body--variant3 {
     background-color: #6FDCE7;
     position: relative;
@@ -830,11 +869,11 @@ body {
   .assort-summer2022__body--variant3:before {
     content: "";
     position: absolute;
-    top: calc(50% - 20px);
+    top: calc(50% - 4px);
     left: -16px;
     background-color: #fff;
     width: calc(100% + 32px);
-    height: 100%;
+    height: calc(100% + 15px);
     z-index: 1;
   }
 
@@ -850,6 +889,17 @@ body {
 
   .assort-summer2022__body--variant3 .assort-summer2022__name {
     color: #fff;
+  }
+
+  .assort-summer2022__body--variant3 .decor {
+    background-size: 100%;
+    width: 115px;
+    left: -60px;
+    top: 142px;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    display: block;
   }
 
   .assort-summer2022__body--variant4 {
@@ -894,6 +944,11 @@ body {
     background-size: 100%;
     width: 100px;
     left: 0;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    display: none;
   }
 
   .assort-summer2022__body--variant5 {
@@ -924,12 +979,38 @@ body {
     height: 100%;
   }
 
+  .assort-summer2022__body--variant5 .decor {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    left: -53px;
+    background-image: url(../img/decor-dots-2.png);
+    background-size: 100%;
+    width: 114px;
+    height: 290px;
+    display: block;
+  }
+
   .assort-summer2022__item {
     position: relative;
+    padding: 18px 10px;
+    max-width: 223px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .assort-summer2022__img {
     margin-bottom: 10px;
+  }
+
+  .assort-summer2022 .h2 {
+    margin-bottom: 18px;
+  }
+
+  .brand-summer2022 {
+    padding: 50px 0 74px;
   }
 
   .brand-summer2022__body {

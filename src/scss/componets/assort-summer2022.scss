@@ -32,10 +32,8 @@
         width: 100%;
         height: 100%;
       }
-      .assort-summer2022__item{
-        &:hover{
-          background-color: rgba(#EBB6BC,.4);
-        }
+      .decor{
+        display: none;
       }
     }
     &--variant2{
@@ -186,6 +184,8 @@
     text-transform: lowercase;
     color: #000000;
     height: 48px;
+    max-width: 180px;
+    margin: 0 auto;
     &--color1{
       color: #6FDCE7;
     }
@@ -253,6 +253,21 @@
         }
         .assort-summer2022__name--color2{
           color: #6FDCE7;
+        }
+        .decor{
+          position: absolute;
+          top: 50%;
+          left: -70px;
+          transform: translate(0, -50%);
+          background-image: url("../img/decor-dots-circle.png");
+          background-repeat: no-repeat;
+          background-position: left;
+          background-size: contain;
+          width: 115px;
+          height: 390px;
+          z-index: 10;
+          display: block;
+          pointer-events: none;
         }
       }
       &--variant2{

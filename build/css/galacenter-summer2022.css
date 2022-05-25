@@ -171,7 +171,7 @@ body {
       -ms-flex: 1 0 40%;
           flex: 1 0 40%;
   background-color: #EBB6BC;
-  padding: 40px;
+  padding: 40px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +239,7 @@ body {
 
 .slider-summer2022 .swiper-pagination {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   right: 20%;
   left: auto;
   width: auto;
@@ -419,8 +419,8 @@ body {
   height: 100%;
 }
 
-.assort-summer2022__body--variant1 .assort-summer2022__item:hover {
-  background-color: rgba(235, 182, 188, 0.4);
+.assort-summer2022__body--variant1 .decor {
+  display: none;
 }
 
 .assort-summer2022__body--variant2 {
@@ -597,6 +597,8 @@ body {
   text-transform: lowercase;
   color: #000000;
   height: 48px;
+  max-width: 180px;
+  margin: 0 auto;
 }
 
 .assort-summer2022__name--color1 {
@@ -816,6 +818,24 @@ body {
 
   .assort-summer2022__body--variant1 .assort-summer2022__name--color2 {
     color: #6FDCE7;
+  }
+
+  .assort-summer2022__body--variant1 .decor {
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    background-image: url("../img/decor-dots-circle.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 115px;
+    height: 390px;
+    z-index: 10;
+    display: block;
+    pointer-events: none;
   }
 
   .assort-summer2022__body--variant2 {

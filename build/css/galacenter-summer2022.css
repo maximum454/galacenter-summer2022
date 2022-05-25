@@ -199,6 +199,8 @@ body {
 }
 
 .slider-summer2022__btn {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -340,6 +342,7 @@ body {
 }
 
 .spec-summer2022__name {
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -371,7 +374,7 @@ body {
   overflow: hidden;
   padding: 70px 0;
   background-color: #EBB6BC;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   position: relative;
 }
 
@@ -414,6 +417,10 @@ body {
   background-color: #fff;
   width: 100%;
   height: 100%;
+}
+
+.assort-summer2022__body--variant1 .assort-summer2022__item:hover {
+  background-color: rgba(235, 182, 188, 0.4);
 }
 
 .assort-summer2022__body--variant2 {
@@ -680,6 +687,11 @@ body {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 31px;
+}
+
+.brand-summer2022 .h2 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media only screen and (max-width: 1023px) {

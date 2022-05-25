@@ -34,7 +34,7 @@ const swiperMainSummer2022 = new Swiper('.swiper-main-summer2022', {
     watchSlidesProgress: true,
     observer: true,
     autoplay: {
-        delay: 500000,
+        delay: 5000,
     },
     pagination: {
         el: '.swiper-pagination',
